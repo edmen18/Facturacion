@@ -1,0 +1,123 @@
+set ANSI_NULLS ON
+set QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE SpT_CARGOInsertar
+@id_carg AS INT,
+@desc_carg AS VARCHAR(30)
+AS
+BEGIN
+INSERT INTO T_CARGO (desc_carg)
+SET @Id_carg = @@IDENTITY
+VALUES (@desc_carg)
+END
+GO
+
+CREATE PROCEDURE SpT_CARGOActualizar
+@id_carg AS INT,
+@desc_carg AS VARCHAR(30)
+AS
+BEGIN
+UPDATE T_CARGO
+SET desc_carg = @desc_carg
+WHERE id_carg = @id_carg
+END
+GO
+
+CREATE PROCEDURE SpT_CARGOEliminar
+@Id_carg AS INT
+AS
+BEGIN
+DELETE FROM T_CARGO
+WHERE Id_carg = @Id_carg
+END
+GO
+
+CREATE PROCEDURE SpT_CARGOListar
+AS
+BEGIN
+SELECT id_carg,
+desc_carg
+FROM T_CARGO
+END
+GO
+
+CREATE PROCEDURE SpT_CARGOObtener
+@Id_carg AS INT
+AS
+BEGIN
+SELECT TOP 1 
+id_carg,
+desc_carg
+FROM T_CARGO
+WHERE Id_carg = @Id_carg
+END
+GO
+
+CREATE PROCEDURE SpT_CARGOPrimero
+AS
+BEGIN
+SELECT TOP 1 
+id_carg,
+desc_carg
+FROM T_CARGO
+ORDER BY  Id_carg ASC
+END
+GO
+
+CREATE PROCEDURE SpT_CARGOUltimo
+AS
+BEGIN
+SELECT TOP 1 
+id_carg,
+desc_carg
+FROM T_CARGO
+ORDER BY  Id_carg DESC
+END
+GO
+
+CREATE PROCEDURE SpT_CARGOAnterior
+@Id_carg AS INT
+AS
+IF(SELECT COUNT(Id_carg) FROM T_CARGO WHERE Id_carg < @Id_carg) > 0
+BEGIN
+SELECT TOP 1 
+id_carg,
+desc_carg
+FROM T_CARGO
+WHERE Id_carg < @Id_carg
+ORDER BY  Id_carg DESC
+END
+ELSE
+BEGIN
+SELECT TOP 1 
+id_carg,
+desc_carg
+FROM T_CARGO
+ORDER BY  Id_carg ASC
+END
+GO
+
+
+CREATE PROCEDURE SpT_CARGOSiguiente
+@Id_carg AS INT
+AS
+IF(SELECT COUNT(Id_carg) FROM T_CARGO WHERE Id_carg > @Id_carg) > 0
+BEGIN
+SELECT TOP 1 
+id_carg,
+desc_carg
+FROM T_CARGO
+WHERE Id_carg > @Id_carg
+ORDER BY  Id_carg ASC
+END
+ELSE
+BEGIN
+SELECT TOP 1 
+id_carg,
+desc_carg
+FROM T_CARGO
+ORDER BY  Id_carg DESC
+END
+GO
+

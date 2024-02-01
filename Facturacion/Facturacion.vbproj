@@ -1,0 +1,1086 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{780175C4-7410-4F63-BCC5-F8124C7163CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Facturacion</RootNamespace>
+    <AssemblyName>Facturacion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Facturacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Facturacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.UI, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_acerca.Designer.vb">
+      <DependentUpon>frm_acerca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_acerca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_articulo.Designer.vb">
+      <DependentUpon>frm_articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_auditoria.Designer.vb">
+      <DependentUpon>frm_auditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_auditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_backup.Designer.vb">
+      <DependentUpon>frm_backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_banco.Designer.vb">
+      <DependentUpon>frm_banco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cargos.Designer.vb">
+      <DependentUpon>frm_cargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_clientes.Designer.vb">
+      <DependentUpon>frm_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_clientes_consulta.Designer.vb">
+      <DependentUpon>frm_clientes_consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_clientes_consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_clientes_importar.Designer.vb">
+      <DependentUpon>frm_clientes_importar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_clientes_importar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_convertidor.Designer.vb">
+      <DependentUpon>frm_convertidor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_convertidor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_empleado.Designer.vb">
+      <DependentUpon>frm_empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_empleados_permisos.Designer.vb">
+      <DependentUpon>frm_empleados_permisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_empleados_permisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_empoce_consulta.Designer.vb">
+      <DependentUpon>frm_empoce_consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_empoce_consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_entidad.Designer.vb">
+      <DependentUpon>frm_entidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_entidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_extorno_registra.Designer.vb">
+      <DependentUpon>frm_extorno_registra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_extorno_registra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_grafico_ingresos.Designer.vb">
+      <DependentUpon>frm_grafico_ingresos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_grafico_ingresos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listar_usuarios.Designer.vb">
+      <DependentUpon>frm_listar_usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listar_usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mae_cargos.Designer.vb">
+      <DependentUpon>frm_mae_cargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mae_cargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_producto_consulta.Designer.vb">
+      <DependentUpon>frm_producto_consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_producto_consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_empoce_registra.Designer.vb">
+      <DependentUpon>frm_empoce_registra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_empoce_registra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_restaurar_base.Designer.vb">
+      <DependentUpon>frm_restaurar_base.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_restaurar_base.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tipo_producto.Designer.vb">
+      <DependentUpon>frm_tipo_producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tipo_producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_unidad.Designer.vb">
+      <DependentUpon>frm_unidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_unidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_venta.Designer.vb">
+      <DependentUpon>frm_venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_venta_anulada.Designer.vb">
+      <DependentUpon>frm_venta_anulada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_venta_anulada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_venta_consulta.Designer.vb">
+      <DependentUpon>frm_venta_consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_venta_consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_venta_consulta_auditoria.Designer.vb">
+      <DependentUpon>frm_venta_consulta_auditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_venta_consulta_auditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_venta_consulta_editar.Designer.vb">
+      <DependentUpon>frm_venta_consulta_editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_venta_consulta_editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_venta_detalle.Designer.vb">
+      <DependentUpon>frm_venta_detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_venta_detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_venta_detalle_pago.Designer.vb">
+      <DependentUpon>frm_venta_detalle_pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_venta_detalle_pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_venta_editar.Designer.vb">
+      <DependentUpon>frm_venta_editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_venta_editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones\Main.vb" />
+    <Compile Include="Funciones\ModNumLetras.vb" />
+    <Compile Include="Funciones\Mo_funciones.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_extrorno_consulta.Designer.vb">
+      <DependentUpon>frm_extrorno_consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_extrorno_consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_acerca.resx">
+      <DependentUpon>frm_acerca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_articulo.resx">
+      <DependentUpon>frm_articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_auditoria.resx">
+      <DependentUpon>frm_auditoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_backup.resx">
+      <DependentUpon>frm_backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_banco.resx">
+      <DependentUpon>frm_banco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cargos.resx">
+      <DependentUpon>frm_cargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_clientes.resx">
+      <DependentUpon>frm_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_clientes_consulta.resx">
+      <DependentUpon>frm_clientes_consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_clientes_importar.resx">
+      <DependentUpon>frm_clientes_importar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_convertidor.resx">
+      <DependentUpon>frm_convertidor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_empleado.resx">
+      <DependentUpon>frm_empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_empleados_permisos.resx">
+      <DependentUpon>frm_empleados_permisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_empoce_consulta.resx">
+      <DependentUpon>frm_empoce_consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_entidad.resx">
+      <DependentUpon>frm_entidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_extorno_registra.resx">
+      <DependentUpon>frm_extorno_registra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_grafico_ingresos.resx">
+      <DependentUpon>frm_grafico_ingresos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listar_usuarios.resx">
+      <DependentUpon>frm_listar_usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mae_cargos.resx">
+      <DependentUpon>frm_mae_cargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_producto_consulta.resx">
+      <DependentUpon>frm_producto_consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_empoce_registra.resx">
+      <DependentUpon>frm_empoce_registra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_restaurar_base.resx">
+      <DependentUpon>frm_restaurar_base.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tipo_producto.resx">
+      <DependentUpon>frm_tipo_producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_unidad.resx">
+      <DependentUpon>frm_unidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_venta.resx">
+      <DependentUpon>frm_venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_venta_anulada.resx">
+      <DependentUpon>frm_venta_anulada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_venta_consulta.resx">
+      <DependentUpon>frm_venta_consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_venta_consulta_auditoria.resx">
+      <DependentUpon>frm_venta_consulta_auditoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_venta_consulta_editar.resx">
+      <DependentUpon>frm_venta_consulta_editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_venta_detalle.resx">
+      <DependentUpon>frm_venta_detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_venta_detalle_pago.resx">
+      <DependentUpon>frm_venta_detalle_pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_venta_editar.resx">
+      <DependentUpon>frm_venta_editar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_extrorno_consulta.resx">
+      <DependentUpon>frm_extrorno_consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2b_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\95.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\125.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\133.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\137.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\139.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\143.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logica\Logica.vbproj">
+      <Project>{08cea898-81a0-46b1-85cc-0be48a21dd96}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reportes\Reportes.vbproj">
+      <Project>{03071432-3949-4199-bc37-9cdc9c19e0b6}</Project>
+      <Name>Reportes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="es\DevExpress.Data.v12.2.resources">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Office.v12.2.Core.resources">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.PivotGrid.v12.2.Core.resources">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Printing.v12.2.Core.resources">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\145.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\146.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S53.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

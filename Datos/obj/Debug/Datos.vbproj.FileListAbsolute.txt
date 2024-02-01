@@ -1,0 +1,16 @@
+D:\Proyectos\Net\Facturacion\Datos\bin\Debug\Datos.dll
+D:\Proyectos\Net\Facturacion\Datos\bin\Debug\Datos.pdb
+D:\Proyectos\Net\Facturacion\Datos\bin\Debug\Datos.xml
+D:\Proyectos\Net\Facturacion\Datos\obj\Debug\Datos.Resources.resources
+D:\Proyectos\Net\Facturacion\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+D:\Proyectos\Net\Facturacion\Datos\obj\Debug\Datos.dll
+D:\Proyectos\Net\Facturacion\Datos\obj\Debug\Datos.xml
+D:\Proyectos\Net\Facturacion\Datos\obj\Debug\Datos.pdb
+D:\Proyectos\Net\VB\Facturacion\Datos\bin\Debug\Datos.dll
+D:\Proyectos\Net\VB\Facturacion\Datos\bin\Debug\Datos.pdb
+D:\Proyectos\Net\VB\Facturacion\Datos\bin\Debug\Datos.xml
+D:\Proyectos\Net\VB\Facturacion\Datos\obj\Debug\Datos.Resources.resources
+D:\Proyectos\Net\VB\Facturacion\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+D:\Proyectos\Net\VB\Facturacion\Datos\obj\Debug\Datos.dll
+D:\Proyectos\Net\VB\Facturacion\Datos\obj\Debug\Datos.xml
+D:\Proyectos\Net\VB\Facturacion\Datos\obj\Debug\Datos.pdb

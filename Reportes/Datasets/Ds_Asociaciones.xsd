@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Asociaciones" targetNamespace="http://tempuri.org/Ds_Asociaciones.xsd" xmlns:mstns="http://tempuri.org/Ds_Asociaciones.xsd" xmlns="http://tempuri.org/Ds_Asociaciones.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="CCSLCConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CCSLCConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Reportes.My.MySettings.GlobalReference.Default.CCSLCConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="CCSLCConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CCSLCConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Reportes.My.MySettings.GlobalReference.Default.CCSLCConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_ASOCIACIONESTableAdapter" GeneratorDataComponentClassName="VW_ASOCIACIONESTableAdapter" Name="VW_ASOCIACIONES" UserDataComponentName="VW_ASOCIACIONESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CCSLCConnectionString1 (MySettings)" DbObjectName="CCSLC.dbo.VW_ASOCIACIONES" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ASOC_NOMBRE, ASOC_FECHA_CREACION, ASOC_ACTA, ASOC_SOCIOS, SEC_NOMBRE FROM dbo.VW_ASOCIACIONES</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ASOC_NOMBRE" DataSetColumn="ASOC_NOMBRE" />
+              <Mapping SourceColumn="ASOC_FECHA_CREACION" DataSetColumn="ASOC_FECHA_CREACION" />
+              <Mapping SourceColumn="ASOC_ACTA" DataSetColumn="ASOC_ACTA" />
+              <Mapping SourceColumn="ASOC_SOCIOS" DataSetColumn="ASOC_SOCIOS" />
+              <Mapping SourceColumn="SEC_NOMBRE" DataSetColumn="SEC_NOMBRE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_Asociaciones" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_Asociaciones" msprop:Generator_UserDSName="Ds_Asociaciones">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_ASOCIACIONES" msprop:Generator_TableClassName="VW_ASOCIACIONESDataTable" msprop:Generator_TableVarName="tableVW_ASOCIACIONES" msprop:Generator_TablePropName="VW_ASOCIACIONES" msprop:Generator_RowDeletingName="VW_ASOCIACIONESRowDeleting" msprop:Generator_RowChangingName="VW_ASOCIACIONESRowChanging" msprop:Generator_RowEvHandlerName="VW_ASOCIACIONESRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_ASOCIACIONESRowDeleted" msprop:Generator_UserTableName="VW_ASOCIACIONES" msprop:Generator_RowChangedName="VW_ASOCIACIONESRowChanged" msprop:Generator_RowEvArgName="VW_ASOCIACIONESRowChangeEvent" msprop:Generator_RowClassName="VW_ASOCIACIONESRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ASOC_NOMBRE" msprop:Generator_ColumnVarNameInTable="columnASOC_NOMBRE" msprop:Generator_ColumnPropNameInRow="ASOC_NOMBRE" msprop:Generator_ColumnPropNameInTable="ASOC_NOMBREColumn" msprop:Generator_UserColumnName="ASOC_NOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASOC_FECHA_CREACION" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnASOC_FECHA_CREACION" msprop:Generator_ColumnPropNameInRow="ASOC_FECHA_CREACION" msprop:Generator_ColumnPropNameInTable="ASOC_FECHA_CREACIONColumn" msprop:Generator_UserColumnName="ASOC_FECHA_CREACION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASOC_ACTA" msprop:Generator_ColumnVarNameInTable="columnASOC_ACTA" msprop:Generator_ColumnPropNameInRow="ASOC_ACTA" msprop:Generator_ColumnPropNameInTable="ASOC_ACTAColumn" msprop:Generator_UserColumnName="ASOC_ACTA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASOC_SOCIOS" msprop:Generator_ColumnVarNameInTable="columnASOC_SOCIOS" msprop:Generator_ColumnPropNameInRow="ASOC_SOCIOS" msprop:Generator_ColumnPropNameInTable="ASOC_SOCIOSColumn" msprop:Generator_UserColumnName="ASOC_SOCIOS" type="xs:int" minOccurs="0" />
+              <xs:element name="SEC_NOMBRE" msprop:Generator_ColumnVarNameInTable="columnSEC_NOMBRE" msprop:Generator_ColumnPropNameInRow="SEC_NOMBRE" msprop:Generator_ColumnPropNameInTable="SEC_NOMBREColumn" msprop:Generator_UserColumnName="SEC_NOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
